@@ -7,7 +7,7 @@ const MeetingTypeList = () => {
 
     const router = useRouter();
 
-    const [meetingState, setMeetingState] = useState<'isScheduleMeeting' | 'isJoiningMeeting' |'isInstantMeeting' | undefined >();
+    const [_meetingState, setMeetingState] = useState<'isScheduleMeeting' | 'isJoiningMeeting' |'isInstantMeeting' | undefined >();
 
   return (
     <section className='grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4'>
@@ -39,7 +39,6 @@ const MeetingTypeList = () => {
         handleClick={() => setMeetingState('isJoiningMeeting')}
         className='bg-yellow-1'
         /> 
-
     </section>  
     )
 }
