@@ -3,11 +3,11 @@ import Image from 'next/image'
 import React from 'react'
 
 interface HomeCardProps{
-  className:string,
+  className?:string,
   img:string,
   title:string,
   description:string,
-  handleClick: () => void;
+  handleClick?: () => void;
 }
 
 const HomeCard = ({className, img, title, description, handleClick}: HomeCardProps) => {
